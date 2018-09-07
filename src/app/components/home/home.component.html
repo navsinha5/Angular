@@ -1,0 +1,6 @@
+<h1>Welcome to node-angular sample project</h1>
+<div>
+  <p *ngIf="bypass; then statement2 else statement1"></p>
+    <ng-template #statement1>Exiting user? <a routerLink = "login">Login</a> otherwise <a routerLink= "register">Register.</a></ng-template>
+    <ng-template #statement2>Already logged in, <a routerLink = "" (click) = "onLogout(event)">Logout</a> or <a routerLink = "profile">Go to Profile</a></ng-template>
+</div>

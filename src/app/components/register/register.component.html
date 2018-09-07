@@ -1,0 +1,10 @@
+<h2>Registration Page</h2>
+<div>
+  <form #user = "ngForm" (ngSubmit) = "onSubmit(user)">
+    <input type="email" name="email" placeholder="someone@eg.com" ngModel><br>
+    <input type="password" name="password" placeholder="********" ngModel><br>
+    <input type="text" name="name" placeholder="First-name Last-name" ngModel><br>
+    <input type="submit" value="Sign Up">
+  </form>
+</div>
+<p>{{ message }}</p>

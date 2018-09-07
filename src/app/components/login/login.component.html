@@ -1,0 +1,13 @@
+<h1>Please Login here</h1>
+<br>
+<div>
+  <form #userCredentials = "ngForm" (ngSubmit) = "onLogin(userCredentials)">
+    <input type="email" name="email" placeholder="someone@eg.com" ngModel><br>
+    <input type="password" name="password" placeholder="*******" ngModel><br>
+    <input type="submit" value="Login">
+  </form>
+</div>
+<div>
+  <p>Login with <a routerLink = "#" (click) = "oAuthLogin()">OAuth</a></p>
+</div>
+<p>{{ message }}</p>
